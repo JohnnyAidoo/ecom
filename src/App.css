@@ -3,46 +3,22 @@ header{
   justify-content: space-between;
   width: 100%;
   height: 10vh;
+  margin-bottom: 10px;
+}
+a{
+  text-decoration: none;
+
 }
 .Lsidebar{
   width: 15%;
   height: 100%;
   display: flex;
   align-items: center;
-}
-.Lsidebar i{
-  font-size: x-large;
-  margin-right: 5px;
+  justify-content: space-between;
 }
 .Lsidebar img{
   width: 120px;
 }
-
-
-.SearchBar{
-  display: flex;
-  align-items: center;
-  width: 40%;
-  height: 100%;
-}
-.SearchBar div {
-  display: flex;
-  align-items: center;
-  border: solid 1px;
-  border-radius: 30px;
-  width: 100%;
-  height: 50%;
-  padding-left: 20px;
-
-}
-.SearchBar input{
-  width: 93%;
-  height: 50%;
-  border: none;
-  outline: none;
-}
-
-
 
 .Rsidebar{
   display: flex;
@@ -52,118 +28,100 @@ header{
   height: 100%;
 }
 .Rsidebar i{
-  font-size: xx-large;
+  font-size: large;
 }
-.Rsidebar .avatar{
-  width: 20%;
-  height: 60%;
-  border-radius: 50%;
-  background-color: green;
-}
-
-.main{
+.bannerContainer{
   display: flex;
-  width: 100%;
-  height: 500px;
+  align-items: center;
+  justify-content: center;
 }
-
-.LsideNav{
-  flex-direction: column;
-  width: 15%;
-  margin-right: 20px;
-}
-.LsideNav nav{
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-}
-
-.LsideNav #nav2{
-  height: 100px;
-}
-.LsideNav #nav3{
-  height: 300px;
-}
-.LsideNav a{
-  padding: 5px 5px 5px 0px;
-  color: black;
-  text-decoration: none;
-  margin-left: 20px;
-
-}
-.LsideNav span{
-  margin-right: 15px;
-}
-a:hover{
-  background-color: grey;
-}
-
-.scroll{
-  overflow-x: scroll;
-  max-width: 100vw;
+.banner{
   display: flex;
   justify-content: space-evenly;
-}
-.scroll button{
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 0px 10px 0px 10px;
   border-radius: 20px;
-  margin-right: 20px;
-  width: fit-content;
-  border: none;
-  text-align: center;
-  cursor: all-scroll;
+  width: 90%;
+  height: 80vh;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.banner div{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+ }
+ .banner .text{
+  padding-left: 200px;
+ }
+ .banner .text h1{
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.banner .text h3{
+  color: crimson;
 }
 
-.VideoCard{
-  padding-top: 5px;
-  margin-top: 10px;
-  width: 290px;
-  height: 300px;
-  border: solid 1px rgba(0, 0, 0, 0.1) ;
-  border-radius: 30px;
+.banner .text button{
+  color: white;
+  background-color: crimson;
+  padding: 10px;
+  border: none;
+}
+
+
+.banner img{
+  width: 100%;
+  max-height: 100%;
+}
+.productsBG{
+  padding: 20px ;
+}
+
+.products{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 25px;
+  padding-top: 20px;
+}
+.prductcard{
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 300px;
+  height: 350px;
+ }
+.prductcard img{
+  height: 100%;
+  border-radius: 20px;
+}
+.prductcard #pic{
+  border-radius: 20px;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  background-color: rgba(0, 0, 255, 0.2);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#h1{
+  width: 100%;
+  text-align: center;
+}
+.prductcard div{
+  width: 100%;
+  height: 30%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.VideoCard .thumbnail{
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  width: 98%;
-  height: 70%;
-  margin-bottom: 20px;
-}
-.VideoCard .details{
-  display: flex;
-  width: 100%;
-  height: 10%;
-  align-items: center;
-}
-.VideoCard .details .img{
-  border: solid 0.5px rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
-  margin-right: 20px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.VideoCard .details .img img{
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
+.prductcard div h3 ,.prductcard div i ,.prductcard div h2 {
+ margin-top: -10px;
 }
-
-.VideoCard .details2{
-  margin-left: -20px;
-}
-.videogrid{
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(4,1fr);
+.prductcard div h2 {
+  color: crimson;
+  font-weight: bolder;
+  font-style: italic;
 }

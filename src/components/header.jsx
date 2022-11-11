@@ -1,6 +1,4 @@
 import React from 'react';
-import logo from '../images/YTlogo.png'
-import Scrollers from '../components/Hscrolls';
 
 
 
@@ -10,28 +8,24 @@ function Header() {
         
         <header>
             <div className='Lsidebar' >
-                <i className='bi-list'></i>
-                <img  id='YTlogo' src={logo} alt="Logo" />
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
             </div>
 
-            <div className='SearchBar' >
-                <div>
-                    <input type="search" name="search" placeholder='Search' />
-                    <i className='bi-search' ></i>
-                </div>
+            <div className='mid' >
+                <h1>RAINBOW</h1>
             </div>
 
             <div className='Rsidebar' >
-                <i className='bi-camera-video' ></i>
-                <i className='bi-bell' ></i>
-                <div className='avatar'>
-
-                </div>
+                <i className='bi-search' ></i>
+                <i className='bi-person' ></i>
+                <i className='bi-cart' ></i>
             </div>
             
         </header>
             <div>
-                <Scrollers />
             </div>
     
         </>
